@@ -211,6 +211,9 @@ body{
         position: absolute;
         left: 14%;
     }
+    .table .products{
+        flex-basis: 95%;
+    }
 }
 @media (max-width:465px){
     .data{
