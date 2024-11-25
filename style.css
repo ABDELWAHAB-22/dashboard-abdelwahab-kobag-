@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #001;
+    color: #fff;
+    display: flex;
+}
+.menu{
+    background-color: #123;
+    width: 70px;
+    height: 100vh;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+}
+.menu:hover{
+    width: 270px;
+}
+.menu .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+}
+.menu .content .imges{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 11px;
+}
+.menu .content .imges img{
+    width: 100%
+}
+.menu .content h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 5px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+.menu ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    
+}
+.menu ul li:hover{
+    background-color: #ffffff55;
+}
+
+.menu ul li a{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 50px;
+    
+}
+
+.menu ul li h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.menu ul li.active{
+    background-color: #ffffff55;
+}
+.menu ul li.logout{
+    position: absolute;
+    bottom: 10%;
+    width: 96%;
+    background-color: #ff0000b1;
+    height: 50px;
+}
+.data{
+    width: 95.5%;
+    position: absolute;
+    left: 4.5%;
+}
+.data .dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0418ff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.data .boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px;
+}
+.data .boxes .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #123;
+    height: 150px;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+.data .boxes .box i{
+    font-size: 35px;
+    cursor: pointer;
+}
+.data .boxes .box p{
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor:text;
+}
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+.table .products{
+    flex-grow: 1;
+    margin: 10px;
+}
+.table .products-1{
+    flex-basis: 45%;
+}
+.table .price .count{
+    flex-basis: 25%;
+}
+.table .products .product{
+    background-color: #0418ff;
+    padding: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.table .products p{
+   background-color:#123;
+   padding: 10px;
+   font-size: 20px;
+   text-transform: capitalize;
+   cursor:text;
+}
+@media (max-width:1350px){
+    .data{
+        width: 94%;
+        position: absolute;
+        left: 6%;
+    }
+}
+@media (max-width:1050px){
+    .data{
+        width: 92%;
+        position: absolute;
+        left: 8%;
+    }
+}
+@media (max-width:768px){
+    .data{
+        width: 89%;
+        position: absolute;
+        left: 11%;
+    }
+}
+@media (max-width:575px){
+    .data{
+        width: 86%;
+        position: absolute;
+        left: 14%;
+    }
+    .table .products{
+        flex-basis: 95%;
+    }
+}
+@media (max-width:465px){
+    .data{
+        width: 82%;
+        position: absolute;
+        left: 18%;
+    }
+}
